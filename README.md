@@ -7,9 +7,8 @@ El objetivo del proyecto es establecer una infraestructura distribuida basada en
 ---
 
 ## Arquitectura general
-
 <p align="center">
-  <img src="recursos (1).png" width="80%" alt="Infraestructura Robotat con ROS2, MOCAP4ROS2 y CrazySwarm2">
+  <img width="900" alt="Infraestructura Robotat ROS2" src="https://github.com/user-attachments/assets/a7b8895a-c5bb-45e9-bc59-fdf6f8b8cc8e" />
 </p>
 
 1. **Captura de movimiento:** sistema OptiTrack administrado por Motive.  
