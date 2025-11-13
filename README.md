@@ -6,7 +6,7 @@ El objetivo del proyecto es establecer una infraestructura distribuida basada en
 
 ---
 
-## 🧠 Arquitectura general
+## Arquitectura general
 
 <p align="center">
   <img width="900" alt="Infraestructura Robotat ROS2" src="https://github.com/user-attachments/assets/a7b8895a-c5bb-45e9-bc59-fdf6f8b8cc8e" />
@@ -19,7 +19,7 @@ El objetivo del proyecto es establecer una infraestructura distribuida basada en
 
 ---
 
-## ⚙️ Espacio de trabajo actual
+## Espacio de trabajo actual
 
 Actualmente, este repositorio incluye el entorno de **comunicación MQTT**, encargado del intercambio de mensajes entre el sistema de captura de movimiento y el servidor ROS2.  
 Los demás componentes —imágenes Docker, nodos ROS2 y documentación técnica— se encuentran disponibles en el siguiente enlace:
@@ -28,7 +28,7 @@ Los demás componentes —imágenes Docker, nodos ROS2 y documentación técnica
 
 ---
 
-## 📦 Tecnologías principales
+##  Tecnologías principales
 
 - **ROS2 Humble**
 - **MOCAP4ROS2**
@@ -39,7 +39,7 @@ Los demás componentes —imágenes Docker, nodos ROS2 y documentación técnica
 
 ---
 
-## 🧩 Comandos Docker básicos
+##  Comandos Docker básicos
 
 ```bash
 # Verificar imágenes disponibles
