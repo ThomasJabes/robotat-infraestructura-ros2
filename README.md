@@ -25,6 +25,7 @@ Actualmente, este repositorio incluye el entorno de **comunicación MQTT**, enca
 Los demás componentes —imágenes Docker, nodos ROS2 y documentación técnica— se encuentran disponibles en el siguiente enlace:
 
 🔗 **[Repositorio general del proyecto (Google Drive)](https://drive.google.com/drive/folders/1ajJXgjBkqGwcT6tUxGNX3f0VVaDPKLEW?usp=sharing)**
+Video Resumen: https://youtu.be/ge7PwUTfvk8
 
 ---
 
