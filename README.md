@@ -1,35 +1,37 @@
-# Infraestructura para Control de Enjambres Robóticos con ROS2 y MOCAP4ROS2
+# Infrastructure for Robotic Swarm Control with ROS2 and MOCAP4ROS2
 
-Este repositorio forma parte del proyecto de graduación **“Implementación de infraestructura para el control de enjambres robóticos con ROS2 y captura de movimiento dentro del ecosistema Robotat”**, desarrollado en la **Universidad del Valle de Guatemala**.
+This repository is part of the graduation project **"Implementation of infrastructure for robotic swarm control with ROS2 and motion capture within the Robotat ecosystem"**, developed at **Universidad del Valle de Guatemala**.
 
-El objetivo del proyecto es establecer una infraestructura distribuida basada en **ROS2**, integrando el paquete **MOCAP4ROS2** con el sistema de captura de movimiento **OptiTrack**, y empleando **CrazySwarm2** y **MQTT** para la coordinación y comunicación entre agentes robóticos.
+The goal of the project is to establish a distributed infrastructure based on **ROS2**, integrating the **MOCAP4ROS2** package with the **OptiTrack** motion capture system, and using **CrazySwarm2** and **MQTT** for coordination and communication between robotic agents.
 
 ---
 
-## Arquitectura general
+## General Architecture
 
 <p align="center">
-  <img width="900" alt="Infraestructura Robotat ROS2" src="https://github.com/user-attachments/assets/a7b8895a-c5bb-45e9-bc59-fdf6f8b8cc8e" />
+  <img width="900" alt="Robotat ROS2 Infrastructure" src="https://github.com/user-attachments/assets/a7b8895a-c5bb-45e9-bc59-fdf6f8b8cc8e" />
 </p>
 
-1. **Captura de movimiento:** Sistema OptiTrack administrado por Motive.  
-2. **Transmisión de datos:** Mediante los protocolos **NatNet** y **MQTT**.  
-3. **Procesamiento:** En un servidor **ROS2** con el paquete **MOCAP4ROS2** dentro de un contenedor Docker.  
-4. **Validación experimental:** Con múltiples robots **Pololu 3pi+** sincronizados en tiempo real.
+1. **Motion capture:** OptiTrack system managed by Motive.
+2. **Data transmission:** Via the **NatNet** and **MQTT** protocols.
+3. **Processing:** On a **ROS2** server running the **MOCAP4ROS2** package inside a Docker container.
+4. **Experimental validation:** With multiple **Pololu 3pi+** robots synchronized in real time.
 
 ---
 
-## Espacio de trabajo actual
+## Current workspace
 
-Actualmente, este repositorio incluye el entorno de **comunicación MQTT**, encargado del intercambio de mensajes entre el sistema de captura de movimiento y el servidor ROS2.  
-Los demás componentes —imágenes Docker, nodos ROS2 y documentación técnica— se encuentran disponibles en el siguiente enlace:
+This repository currently includes the **MQTT communication** environment, responsible for message exchange between the motion capture system and the ROS2 server.
 
-🔗 **[Repositorio general del proyecto (Google Drive)](https://drive.google.com/drive/folders/1ajJXgjBkqGwcT6tUxGNX3f0VVaDPKLEW?usp=sharing)**
-Video Resumen: https://youtu.be/ge7PwUTfvk8
+The remaining components — Docker images, ROS2 nodes, and technical documentation — are available at the following link:
+
+🔗 **[General project repository (Google Drive)](https://drive.google.com/drive/folders/1ajJXgjBkqGwcT6tUxGNX3f0VVaDPKLEW?usp=sharing)**
+
+Summary video: https://youtu.be/ge7PwUTfvk8
 
 ---
 
-##  Tecnologías principales
+## Main technologies
 
 - **ROS2 Humble**
 - **MOCAP4ROS2**
@@ -40,17 +42,18 @@ Video Resumen: https://youtu.be/ge7PwUTfvk8
 
 ---
 
-##  Comandos Docker básicos
+## Basic Docker commands
 
 ```bash
-# Verificar imágenes disponibles
+# Check available images
 docker images
 
-# Cargar imagen .tar exportada
+# Load exported .tar image
 sudo docker load -i crazyflie_ros2_humble.tar
 
-# Ejecutar el contenedor
+# Run the container
 sudo docker run -it crazyflie-ros2:humble
 
-# Reconstruir imagen si hay cambios
+# Rebuild image if there are changes
 sudo docker build -t crazyflie-ros2:humble .
+```
